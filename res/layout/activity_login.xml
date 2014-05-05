@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dip"
+    android:background="@drawable/wood_1" >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    	<TextView
+        	android:id="@+id/textView1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/sign_in"
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold" 
+        	/>
+
+    	<TextView
+        	android:id="@+id/textView2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="left"
+        	android:layout_marginTop="24dp"
+        	android:textSize="15.5sp"
+        	android:text="@string/Email"
+        	android:textColor="#FFFFFF"
+        	android:textStyle="bold" />
+     <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+     <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/Password"
+            android:textSize="15.5sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <!-- <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/cb1" />
+ -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/login"
+             />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/register" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exit" />
+
+	</LinearLayout>
+</ScrollView>
